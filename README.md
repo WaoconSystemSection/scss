@@ -53,7 +53,7 @@ scss
 │   ├── _signin.scss
 │   ├── _signup.scss
 │   ├── _top.scss
-│   └── admin #管理ページ
+│   └── admin ###管理ページ
 │       ├── _dashboard.scss
 │       └── _setting.scss
 └── style.scss #コンパイルされる (それぞれのファイルの意味はここを参照)
