@@ -6,11 +6,12 @@
 
 /***** ミックスイン( @extendや@functionもここに設置する) *****/
 @import "mixin/media"; // メディアクエリ z-index
+@import "mixin/vender_prefix"; // ベンダープレフィックス
 
 /***** 共通して使うデザイン (上書きを想定) *****/
 @import "common/wrap"; // 共通する一番外側のタグ
 @import "common/form"; // formの部品(input,select,)
-@import "common/btn"; // ボタン
+@import "common/btn"; // ボタン リンク
 @import "common/other"; // ファイル作るほどでもないもの。オーバーレイとか
 
 
