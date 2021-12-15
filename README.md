@@ -12,13 +12,12 @@
 <br>
 
 ## ディレクトリ構造
-ディレクトリ
-init: 初期化  
-mixin: ミックスイン( @extendや@functionもここに設置する)
-common: 共通で使うデザイン。
-block: ヘッダーやフッターなどのパーツ
-page: ページ別
-otehr: 優先させたい&個別にあてるクラス。
+- init: 初期化  
+- mixin: ミックスイン( @extendや@functionもここに設置する)
+- common: 共通で使うデザイン。
+- block: ヘッダーやフッターなどのパーツ
+- page: ページ別
+- otehr: 優先させたい&個別にあてるクラス。
 
 ```
 scss
