@@ -1,0 +1,8 @@
+//width: 0%~100%の作成
+$width: 100;
+@while $width > 0 {
+    .width#{$width} {
+        width: #{$width} + #{"%"};
+    }
+    $width: $width - 2;
+}

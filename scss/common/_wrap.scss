@@ -1,0 +1,9 @@
+.wrap-content {
+  margin: 0 auto;
+  width: calc(100% - 10px);
+  max-width: 900px;
+  background: red;
+  @include media(m) {
+    width: calc(100% - 20px);
+  }
+}

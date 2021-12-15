@@ -1,0 +1,17 @@
+$set-prefix: '', '-moz-', '-webkit-'; /* つけたいやつを変数に入れる */
+
+// プロパティに付与
+@mixin ProprtySetPrefix($name, $value) {
+  @each $prefix in $set-prefix {
+    #{$prefix}#{$name}: $value;
+  }
+}
+// 値に付与（flex、グラデーションに対応できていない...）
+@mixin ValueSetPrefix($name, $value) {
+  @each $prefix in $set-prefix {
+    #{$name}: #{$prefix}$value;
+  }
+}
+
+/* 使用例 */
+//@include ProprtySetPrefix(transition, .2s);
