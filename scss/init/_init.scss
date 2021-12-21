@@ -2,11 +2,12 @@
 $font_main: "YuGothic,'Yu Gothic','ヒラギノ角ゴシック','Hiragino Sans',sans-serif";
 $font_sub: "'Futura','メイリオ', Meiryo,'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif";
 
-/* 色　変数定義 */
+/* 色 変数定義 */
 $color_base: "#ff0000"; //基調
 $color_bg: "#d3d3d3"; //背景
-$color_bg_sub: "#eee"; //背景2
+$color_subbg: "#eee"; //サブ背景
 $color_text: "#000"; //メインテキスト
+$color_subtext: "#fff"; //サブテキスト
 $red: "#ff0000";
 
 html {

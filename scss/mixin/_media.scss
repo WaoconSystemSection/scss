@@ -1,14 +1,14 @@
 /* メディアクエリ */
 $breakpoints: (
-    // 細いスマホ以下
-    xxs: "only screen and (max-width: 320px)",
+    // 細いスマホ以上
+    xxs: "only screen and (min-width: 320px)",
     // 標準スマホ以上
     xs: "only screen and (min-width: 480px)",
-    // 細いタブレット&スマホ横向き以上
+    // 幅小さめタブレット&スマホ横向き以上
     s: "only screen and (min-width: 600px)",
     // ipad以上
     m: "only screen and (min-width: 768px)",
-    // 細めノートPC以上
+    // 幅小さめノートPC以上
     l: "only screen and (min-width: 1024px)",
     // HD以上
     xl: "only screen and (min-width: 1280px)",
@@ -34,7 +34,6 @@ $ary_z: (
     header: 100,
     sidebar: 75,
     overlay: 50,
-    overlay_modal: 125,
     up: 5, //デフォルトより上層にしたい用
     default: 1,
 );
