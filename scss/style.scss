@@ -1,7 +1,7 @@
 /***** 初期化 *****/
 @import "init/normalize"; //ノーマライズ
 @import "init/reset"; // リセット
-@import "init/init"; // 変数(色、フォント、) htmlタグ
+@import "init/init"; // 変数(色、フォント、)を最初に定義 htmlタグ
 
 
 /***** ミックスイン( @extendや@functionもここに設置する) *****/
