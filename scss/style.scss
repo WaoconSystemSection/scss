@@ -51,9 +51,9 @@
 
 
 /***** 優先させたい&個別に当てるクラス *****/
-@import "other/media"; // width
-@import "other/color"; // 色
-@import "other/other"; // ファイルをつくるほどでもないもの
+@import "priority/media"; // width
+@import "priority/color"; // 色
+@import "priority/other"; // ファイルをつくるほどでもないもの
 
 
 /***** ライブラリ *****/

@@ -23,6 +23,7 @@
 - block: ヘッダーやフッター、サーバーなどのブロック。
 - page: ページ別。
 - priority: 優先させたい & 個別にあてるクラス。
+- lib: ライブラリ。
 - [style.scss](https://github.com/WaoconSystemSection/scss/blob/main/scss/style.scss): コンパイルするファイル。それぞれのディレクトリとファイルの説明はここを参照。
 
 ```
