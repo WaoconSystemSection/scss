@@ -70,6 +70,7 @@ scss
 │       └── _setting.scss
 ├── priority
 │   ├── _color.scss
+│   ├── _font.scss
 │   ├── _media.scss
 │   └── _other.scss
 └── style.scss

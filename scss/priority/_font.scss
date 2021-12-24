@@ -1,0 +1,8 @@
+// 0.1rem ~ 5remの作成
+$font-size : 5;
+@while $font-size > 0{
+  .rem#{$font-size * 10}{
+    font-size:#{$font-size} + #{'rem'};
+  }
+  $font-size : $font-size - 0.1;
+}
