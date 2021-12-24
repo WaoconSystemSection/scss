@@ -5,6 +5,23 @@
 アイディアがありましたら、コメントやプルリクなどしてください。<br>
 プロジェクトにより、完全に統一はできないと思いますので、ベースと考えて頂けたらと思います。
 
+## 導入方法
+Node,Npm,gulpが導入済みであることが前提。
+```
+# クローン (ルートディレクトリが必要なばあいは '.' をとる)
+git clone git@github.com:WaoconSystemSection/scss.git .
+
+# SCSSの環境構築
+npm install gulp sass gulp-sass gulp-sourcemaps
+
+# コンパイル
+gulp sass
+
+# コンパイル(監視)
+gulp sass:watch
+```
+
+
 ## 記述ルール
 - BEM
 - スマフォファースト。プロジェクトにより、スマフォ対応する必要がない場合はデスクトップファーストでOK。
