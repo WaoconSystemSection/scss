@@ -23,7 +23,7 @@ gulp sass:watch
 
 
 ## 記述ルール
-- BEM Block--Modifier__Element
+- BEM Block__Element--Modifier
 - BlockのネストはOK
 - 複合語はキャメルケース。複合語の先頭を、小文字で書き始める。例) .blockContent
 - スマフォファースト。プロジェクトにより、スマフォ対応する必要がない場合はデスクトップファーストでOK。
