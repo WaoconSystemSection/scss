@@ -25,6 +25,7 @@ gulp sass:watch
 ## 記述ルール
 - BEM Block--Modifier__Element
 - BlockのネストはOK
+- 複合語はキャメルケース。複合語の先頭を、小文字で書き始める。例) .blockContent
 - スマフォファースト。プロジェクトにより、スマフォ対応する必要がない場合はデスクトップファーストでOK。
 - 階層的になるクラスに「&」を利用。
 - それぞれのファイルを1箇所で読み込んでコンパイルする。 [style.scss](https://github.com/WaoconSystemSection/scss/blob/main/scss/style.scss)を参照。
