@@ -9,7 +9,7 @@
 @import "mixin/vender_prefix"; // ベンダープレフィックス
 
 /***** 共通して使うデザイン (上書きを想定) *****/
-@import "common/wrap"; // 共通する一番外側のタグ
+@import "common/wrap"; // 共通する一番外側のタグ 複数のページで共通するレイアウト
 @import "common/form"; // formの部品(input,select,)
 @import "common/btn"; // ボタン リンク
 @import "common/other"; // ファイル作るほどでもないもの。オーバーレイとか
@@ -51,10 +51,10 @@
 
 
 /***** 優先させたい&個別に当てるクラス *****/
-@import "priority/media"; // width
-@import "priority/color"; // 色
-@import "priority/font"; // フォント
-@import "priority/other"; // ファイルをつくるほどでもないもの
+@import "utility/media"; // width
+@import "utility/color"; // 色
+@import "utility/font"; // フォント
+@import "utility/other"; // ファイルをつくるほどでもないもの
 
 
 /***** ライブラリ *****/

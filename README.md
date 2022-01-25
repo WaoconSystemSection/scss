@@ -23,23 +23,25 @@ gulp sass:watch
 
 
 ## 記述ルール
-- BEM
+- BEM Block--Modifier__Element
+- BlockのネストはOK
 - スマフォファースト。プロジェクトにより、スマフォ対応する必要がない場合はデスクトップファーストでOK。
 - 階層的になるクラスに「&」を利用。
-- それぞれのファイルを1箇所で読み込んでコンパイルする。 [style.scss](https://github.com/WaoconSystemSection/scss/blob/main/scss/style.scss)を参照
-- 特別な理由がない限りSCSS内で画像を読み込まない。システム対応しやすいという理由からHTML側で画像を読み込む。
+- それぞれのファイルを1箇所で読み込んでコンパイルする。 [style.scss](https://github.com/WaoconSystemSection/scss/blob/main/scss/style.scss)を参照。
+- 特別な理由がない限りSCSS,CSS内で画像を読み込まない。システム対応しやすいという理由からHTML側で画像を読み込む。
 - ディレクトリ名、ファイル名はプロジェクトに合わせて変更する。特にpage内のファイル名はアクセスされるパスやHTMLファイル名の名前と合わせる。不要なものは削除してOK。
 - @mixin,@extend,@functionや変数などを活用して、繰り返し使うものを共通化する。
+- javascript用に使うクラスの接頭辞は「js-」
 
 <br>
 
 ## ディレクトリ構造
 - init: リセットやノーマライズ、初期設定
 - mixin: ミックスイン( @extendや@functionもここに設置する)
-- common: 共通で使うデザイン。ボタンやフォーム。
-- block: ヘッダーやフッター、サーバーなどのブロック。
+- common: 共通で使うデザイン。ボタンやフォームなど。ページ共通で使うレイアウト。
+- block: ヘッダーやフッター、サイドバー などのブロック。
 - page: ページ別。
-- priority: 優先させたい & 個別にあてるクラス。
+- utility: 優先させたい & 個別にあてるクラス。
 - lib: ライブラリ。
 - [style.scss](https://github.com/WaoconSystemSection/scss/blob/main/scss/style.scss): コンパイルするファイル。それぞれのディレクトリとファイルの説明はここを参照。
 
@@ -85,7 +87,7 @@ scss
 │   └── admin
 │       ├── _dashboard.scss
 │       └── _setting.scss
-├── priority
+├── utility
 │   ├── _color.scss
 │   ├── _font.scss
 │   ├── _media.scss
