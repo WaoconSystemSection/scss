@@ -27,12 +27,13 @@ gulp sass:watch
 - BlockのネストはOK
 - 複合語はキャメルケース。複合語の先頭を、小文字で書き始める。例) .blockContent
 - スマフォファースト。プロジェクトにより、スマフォ対応する必要がない場合はデスクトップファーストでOK。
-- 階層的になるクラスに「&」を利用。
+- 階層的になるクラスに「&」を利用しない。「.&--Modifier」を禁止。
 - それぞれのファイルを1箇所で読み込んでコンパイルする。 [style.scss](https://github.com/WaoconSystemSection/scss/blob/main/scss/style.scss)を参照。
 - 特別な理由がない限りSCSS,CSS内で画像を読み込まない。システム対応しやすいという理由からHTML側で画像を読み込む。
 - ディレクトリ名、ファイル名はプロジェクトに合わせて変更する。特にpage内のファイル名はアクセスされるパスやHTMLファイル名の名前と合わせる。不要なものは削除してOK。
-- @mixin,@extend,@functionや変数などを活用して、繰り返し使うものを共通化する。
+- メディアクエリz-indexなど、変数を渡してよく使うものを@mixinで共通化する。
 - javascript用に使うクラスの接頭辞は「js-」
+- 特別な理由がない限り、utility以外で !important を使うの禁止
 
 <br>
 
@@ -42,7 +43,7 @@ gulp sass:watch
 - common: 共通で使うデザイン。ボタンやフォームなど。ページ共通で使うレイアウト。
 - block: ヘッダーやフッター、サイドバー などのブロック。
 - page: ページ別。
-- utility: 優先させたい & 個別にあてるクラス。
+- utility: 優先させたい & 個別にあてるクラス。 !important; 使う
 - lib: ライブラリ。
 - [style.scss](https://github.com/WaoconSystemSection/scss/blob/main/scss/style.scss): コンパイルするファイル。それぞれのディレクトリとファイルの説明はここを参照。
 
